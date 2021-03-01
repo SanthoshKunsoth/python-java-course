@@ -1,0 +1,16 @@
+title: 'python, Java'
+description: coding with python and Java
+template:
+  repo: python-java-template
+  name: python-java
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
